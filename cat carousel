@@ -1,0 +1,13 @@
+function clickCat(){
+	$('.thumbnail').on('click', e => {
+  
+
+const catSrc = $(e.currentTarget).find('img').attr('src');
+const catAlt = $(e.currentTarget).find('img').attr('alt');
+
+$('.hero').find('img').attr( 'src', catSrc).attr(catAlt, 'alt');
+
+});
+}
+$(clickCat());
+
